@@ -37,7 +37,6 @@ env:
   FIRMWARE_DATEPREFIX: $(date +"%Y%m%d")
   FIRMWARE_AUTHOR: yuos-bit
   FIRMWARE_PATH: /opt/firmwares
-  DIY_P1_SH: diy-part1.sh
   TZ: Asia/Shanghai
 
 jobs:
@@ -76,16 +75,11 @@ jobs:
       run: |
         df -hT $PWD
         git clone --depth=1 $REPOSITORY_URL $WORK_PATH
+        cp -rf $GITHUB_WORKSPACE/DIY/trunk/configs/* $WORK_PATH/trunk/configs/
         cd $WORK_PATH/toolchain-mipsel
         sudo sh dl_toolchain.sh
         mkdir -p /opt/images/
         ln -sf /opt/padavan-3.4 $GITHUB_WORKSPACE/padavan-3.4
-
-    - name: 运行第一脚本
-      run: |
-        chmod +x $DIY_P1_SH
-        cd $WORK_PATH
-        $GITHUB_WORKSPACE/$DIY_P1_SH
 
     - name: 同步编译预设插件
       run: | 
