@@ -16,7 +16,7 @@ on:
       firmwarever:
         description: 'firmware''s version'
         required: true
-        default: '20250221'
+        default: '20250321'
 
       upload_release:
         type: boolean
