@@ -37,6 +37,7 @@ on:
         - MSG1500
         - BELL-A040WQ
         - ZTE-E8820S
+        - E8820V2
         - B70
       plugins:
         description: 'json format string of include configs'
