@@ -115,6 +115,7 @@ jobs:
         echo "njitclient=${{fromJson(github.event.inputs.plugins).njitclient}}" >> $GITHUB_ENV
         echo "minieap=${{fromJson(github.event.inputs.plugins).minieap}}" >> $GITHUB_ENV
         echo "dogcom=${{fromJson(github.event.inputs.plugins).dogcom}}" >> $GITHUB_ENV
+        echo "transmission=${{fromJson(github.event.inputs.plugins).transmission}}" >> $GITHUB_ENV
 
     - name: 同步插件设置
       run: |
