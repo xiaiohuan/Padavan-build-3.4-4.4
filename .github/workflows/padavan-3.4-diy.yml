@@ -12,7 +12,7 @@ on:
       plugins:
         description: 'json format string of include configs'
         required: true
-        default: '{"aria":"n","transmission":"n","vpnsvr":"n","vpncli":"n","vpncmd":"n","openvpn":"n","ss":"n","v2ray":"n","xray":"n","trojan":"n","ssobfs":"n","dnsforwarder":"n","adbyby":"n","adguardhome":"n","smartdns":"n","aliddns":"n","zerotier":"n","frpc":"n","frps":"n","ddnsto":"n","wireguard":"n","aldriver":"n","sqm":"n","mentohust":"n","scutclient":"n","njitclient":"n","minieap":"n","dogcom":"n","transmission-3.00":"y"}'
+        default: '{"aria":"n","transmission":"y","vpnsvr":"n","vpncli":"n","vpncmd":"n","openvpn":"n","ss":"n","v2ray":"n","xray":"n","trojan":"n","ssobfs":"n","dnsforwarder":"n","adbyby":"n","adguardhome":"n","smartdns":"n","aliddns":"n","zerotier":"n","frpc":"n","frps":"n","ddnsto":"n","wireguard":"n","aldriver":"n","sqm":"n","mentohust":"n","scutclient":"n","njitclient":"n","minieap":"n","dogcom":"n"}'
 
       firmwarever:
         description: 'firmware''s version'
@@ -116,7 +116,6 @@ jobs:
         echo "njitclient=${{fromJson(github.event.inputs.plugins).njitclient}}" >> $GITHUB_ENV
         echo "minieap=${{fromJson(github.event.inputs.plugins).minieap}}" >> $GITHUB_ENV
         echo "dogcom=${{fromJson(github.event.inputs.plugins).dogcom}}" >> $GITHUB_ENV
-        echo "transmission=${{fromJson(github.event.inputs.plugins).transmission}}" >> $GITHUB_ENV
 
     - name: 同步插件设置
       run: |
