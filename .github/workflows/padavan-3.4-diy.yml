@@ -8,6 +8,7 @@ on:
         description: 'target to compile'
         options:
         - CMCC_L1-1
+        - E8820V2
       plugins:
         description: 'json format string of include configs'
         required: true
