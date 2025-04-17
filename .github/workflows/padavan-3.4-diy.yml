@@ -212,7 +212,6 @@ jobs:
       run: |
         cd $WORK_PATH/trunk
         sudo ./clear_tree
-        sudo cp -rf $GITHUB_WORKSPACE/DIY/.config $WORK_PATH/trunk/libc/uClibc-ng-1.0.52/
         sudo ./build_firmware_modify ${{ github.event.inputs.target }} 0
         echo "FIRMWARE_DATEPREFIX=$(date +"%Y%m%d")" >> $GITHUB_ENV
         
