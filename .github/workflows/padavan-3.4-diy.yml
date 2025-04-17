@@ -59,6 +59,7 @@ jobs:
         sudo add-apt-repository ppa:ubuntu-toolchain-r/ppa
         sudo apt update -y
         sudo apt full-upgrade -y
+        sudo apt-get install -y software-properties-common
         sudo apt install -y ack antlr3 asciidoc autoconf automake autopoint binutils bison build-essential \
         bzip2 ccache clang cmake cpio curl device-tree-compiler flex gawk gcc-multilib g++-multilib gettext \
         genisoimage git gperf haveged help2man intltool libc6-dev-i386 libelf-dev libfuse-dev libglib2.0-dev \
@@ -69,7 +70,7 @@ jobs:
         sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-13 60 --slave /usr/bin/g++ g++ /usr/bin/g++-13
         sudo timedatectl set-timezone "$TZ"
         sudo mkdir -p /workdir
-        sudo chown $USER:$GROUPS /workdir
+        sudo chown $(id -u):$(id -g) /workdir
 
     - name: 拉取源码
       run: |
