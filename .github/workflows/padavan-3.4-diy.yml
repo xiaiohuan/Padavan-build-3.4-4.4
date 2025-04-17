@@ -175,7 +175,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=${{env.adbyby}}" >> .config #adbyby plus+
         #
         echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=${{env.adguardhome}}" >> .config #adguardhome
-        echo "CONFIG_FIRMWARE_INCLUDE_vim=${{env.vim}}" >> .config #vim
+        echo "CONFIG_FIRMWARE_INCLUDE_VIM=${{env.vim}}" >> .config #vim
         echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=${{env.smartdns}}" >> .config #smartdns
         #
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=${{env.aliddns}}" >> .config #阿里DDNS
