@@ -72,7 +72,7 @@ jobs:
     - name: 拉取源码
       run: |
         df -hT $PWD
-        git clone --depth=1 $REPOSITORY_URL $WORK_PATH
+        git clone --depth=1 --branch dev $REPOSITORY_URL $WORK_PATH
         cp -rf $GITHUB_WORKSPACE/DIY/trunk/configs/* $WORK_PATH/trunk/configs/
         cd $WORK_PATH/toolchain-mipsel
         sudo sh dl_toolchain.sh
@@ -211,10 +211,6 @@ jobs:
     - name: 编译固件
       run: |
         cd $WORK_PATH/trunk
-        cd libc/uClibc-ng-1.0.52
-        make defconfig
-        cd ../..
-
         sudo ./clear_tree
         sudo cp -rf $GITHUB_WORKSPACE/DIY/.config $WORK_PATH/trunk/libc/uClibc-ng-1.0.52/
         sudo ./build_firmware_modify ${{ github.event.inputs.target }} 0

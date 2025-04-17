@@ -105,7 +105,7 @@ jobs:
     - name: 拉取源码
       run: |
         df -hT $PWD
-        git clone --depth=1 $REPOSITORY_URL $WORK_PATH
+        git clone --depth=1 --branch master $REPOSITORY_URL $WORK_PATH
         cd $WORK_PATH/toolchain-mipsel
         sudo sh dl_toolchain.sh
         mkdir -p /opt/images/
