@@ -43,7 +43,7 @@ on:
       firmwarever:
         description: 'firmware''s version'
         required: true
-        default: '20250414'
+        default: '20250926'
       uploadwet:
         type: boolean
         description: 'upload firmware to wetransfer'
@@ -68,7 +68,7 @@ env:
   WORK_PATH: /opt/padavan-4.4
   TZ: Asia/Shanghai
   FIRMWARE_DATEPREFIX: $(date +"%Y%m%d")
-  FIRMWARE_AUTHOR: yuos-bit
+  FIRMWARE_AUTHOR: xiaohuan
   FIRMWARE_PATH: /opt/firmwares
 jobs:
   build:
