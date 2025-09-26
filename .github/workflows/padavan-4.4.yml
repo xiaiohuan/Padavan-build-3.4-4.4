@@ -64,7 +64,7 @@ on:
 
 env:
   REPOSITORY_URL: https://github.com/xiaiohuan/padavan-4.4.git
-  TOOLCHAIN_URL: https://github.com/yuos-bit/padavan-4.4/releases/download/2023.01.12/mipsel-linux-uclibc.tar.xz
+  TOOLCHAIN_URL: https://github.com/xiaiohuan/padavan-4.4/releases/download/20250926/mipsel-linux-uclibc.tar.xz
   WORK_PATH: /opt/padavan-4.4
   TZ: Asia/Shanghai
   FIRMWARE_DATEPREFIX: $(date +"%Y%m%d")
