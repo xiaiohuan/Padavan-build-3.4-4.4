@@ -202,13 +202,13 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_TUNSAFE=n" >> .config #tunsafe
         echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=y" >> .config #dnsforwarder
         #
-        echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config #adbyby plus+
+        echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config #adbyby plus+
         #
         echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config #adguardhome
-        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config #smartdns
+        echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config #smartdns
         #
         echo "CONFIG_FIRMWARE_INCLUDE_ALIDDNS=y" >> .config #阿里DDNS
-        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=y" >> .config #zerotier ~1.3M
+        echo "CONFIG_FIRMWARE_INCLUDE_ZEROTIER=n" >> .config #zerotier ~1.3M
         echo "CONFIG_FIRMWARE_INCLUDE_DDNSTO=y" >> .config #ddnsto
         echo "CONFIG_FIRMWARE_INCLUDE_WIREGUARD=y" >> .config #wireguard
         #
@@ -216,14 +216,14 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SQM=y" >> .config #SQM
         #
         # frp & frps
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=y" >> .config #frp客户端
-        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=y" >> .config #frp服务端
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPC=n" >> .config #frp客户端
+        echo "CONFIG_FIRMWARE_INCLUDE_FRPS=n" >> .config #frp服务端
         # frp & frps
         #下载功能
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA=y" >> .config #配置项aria
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=y" >> .config #配置项aria网页控制台
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=y" >> .config #删除配置项TRANSMISSION
-        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=y" >> .config #配置项TRANSMISSION网页控制台
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config #删除配置项TRANSMISSION
+        echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >> .config #配置项TRANSMISSION网页控制台
         #校园网相关开始
         echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=y" >> .config #MENTOHUST
         echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=y" >> .config #SCUTCLIENT
