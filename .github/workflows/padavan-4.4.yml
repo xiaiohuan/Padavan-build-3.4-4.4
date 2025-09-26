@@ -225,11 +225,11 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config #删除配置项TRANSMISSION
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION_WEB_CONTROL=n" >> .config #配置项TRANSMISSION网页控制台
         #校园网相关开始
-        echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=y" >> .config #MENTOHUST
-        echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=y" >> .config #SCUTCLIENT
-        echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=y" >> .config
-        echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_MENTOHUST=n" >> .config #MENTOHUST
+        echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> .config #SCUTCLIENT
+        echo "CONFIG_FIRMWARE_INCLUDE_NJIT_CLIENT=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_MINIEAP=n" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_DOGCOM=n" >> .config
         #校园网相关结束
         #########################################################################################
         #自定义添加其它功能请参考源码configs/templates/目录下的config文件。按照上面的格式添加即可
