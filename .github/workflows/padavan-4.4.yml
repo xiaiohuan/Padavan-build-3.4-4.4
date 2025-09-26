@@ -63,7 +63,7 @@ on:
         default: 'true'  # 默认上传到Cloudreve
 
 env:
-  REPOSITORY_URL: https://github.com/yuos-bit/padavan-4.4.git
+  REPOSITORY_URL: https://github.com/xiaiohuan/padavan-4.4.git
   TOOLCHAIN_URL: https://github.com/yuos-bit/padavan-4.4/releases/download/2023.01.12/mipsel-linux-uclibc.tar.xz
   WORK_PATH: /opt/padavan-4.4
   TZ: Asia/Shanghai
