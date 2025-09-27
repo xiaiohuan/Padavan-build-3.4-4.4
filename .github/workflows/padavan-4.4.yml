@@ -22,6 +22,7 @@ on:
         - MI-R3P
         - MI-R3G
         - NEWIFI
+        - NEWIFI3
         - XY-C1
         - WR1200JS
         - MSG1500
@@ -63,7 +64,7 @@ on:
         default: 'true'  # 默认上传到Cloudreve
 
 env:
-  REPOSITORY_URL: https://github.com/xiaiohuan/padavan-4.4.git
+  REPOSITORY_URL: https://github.com/GH-X/padavan-4.4.git
   TOOLCHAIN_URL: https://github.com/xiaiohuan/padavan-4.4/releases/download/20250926/mipsel-linux-uclibc.tar.xz
   WORK_PATH: /opt/padavan-4.4
   TZ: Asia/Shanghai
